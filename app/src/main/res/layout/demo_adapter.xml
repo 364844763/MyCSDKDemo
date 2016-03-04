@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/iv_demo_icon"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_demo_title"
+        android:text="test_title"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/iv_demo_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_below="@id/tv_demo_title"
+        android:layout_toRightOf="@id/iv_demo_icon"
+        android:id="@+id/iv_description"
+        android:text="We present a graph-based planning and replanning algorithm able to produce bounded suboptimal solutions in an anytime fashion. Our algorithm tunes the quality of its solution based on available search time, at every step reusing previous search efforts. When updated information regarding the underlying graph is received, the algorithm incrementally repairs its previous solution. The result is an approach that combines the benefits of anytime and incremental planners to provide efficient solutions to complex, dynamic search problems. We present theoretical analysis of the algorithm, experimental results on a simulated robot kinematic arm, and two current applications in dynamic path planning for outdoor mobile robots."
+        android:layout_width="wrap_content"
+        android:maxLines="5"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
